@@ -176,3 +176,10 @@ class ClusterTapEvent extends MapEvent<Cluster> {
   /// cluster icon managed by [ClusterManager].
   ClusterTapEvent(super.mapId, super.cluster);
 }
+
+/// An event fired when a Map is long pressed.
+class MapPoiTapEvent extends MapEvent<PointOfInterest> {
+
+  /// Build an MapTap Event triggered from the map represented by `mapId`.
+  MapPoiTapEvent(super.mapId, super.poi);
+}
