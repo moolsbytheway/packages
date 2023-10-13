@@ -297,6 +297,11 @@ class GoogleMapsPlugin extends GoogleMapsFlutterPlatform {
     return _map(mapId).lastStyleError;
   }
 
+  @override
+  Stream<MapPoiTapEvent> onPoiTap({required int mapId}) {
+    return _events(mapId).whereType<MapPoiTapEvent>();
+  }
+
   /// Disposes of the current map. It can't be used afterwards!
   @override
   void dispose({required int mapId}) {
