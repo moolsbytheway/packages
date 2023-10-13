@@ -549,7 +549,6 @@ class _GoogleMapState extends State<GoogleMap> {
   }
 
   void onPoiTap(PointOfInterest poi) {
-    assert(poi != null);
     final ArgumentCallback<PointOfInterest>? onPoiTap = widget.onPoiTap;
     if (onPoiTap != null) {
       onPoiTap(poi);
