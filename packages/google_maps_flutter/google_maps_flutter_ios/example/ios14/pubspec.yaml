@@ -21,9 +21,9 @@ dependencies:
 # google_maps_flutter_platform_interface: ^2.4.0
   google_maps_flutter_platform_interface:
     git:
-      url: https://github.com/rokwire/packages.git
+      url: https://github.com/moolsbytheway/packages.git
       path: packages/google_maps_flutter/google_maps_flutter_platform_interface
-      ref: google_maps_flutter/add-poi-tap-callback-2.5.0
+      ref: google_maps_flutter/add-poi-tap-callback
 
   maps_example_dart:
     path: ../shared/maps_example_dart/
