@@ -200,6 +200,11 @@ class GoogleMapsFlutterIOS extends GoogleMapsFlutterPlatform {
   }
 
   @override
+    Stream<MapPoiTapEvent> onPoiTap({required int mapId}) {
+      return _events(mapId).whereType<MapPoiTapEvent>();
+    }
+
+  @override
   Future<void> updateMapConfiguration(
     MapConfiguration configuration, {
     required int mapId,
