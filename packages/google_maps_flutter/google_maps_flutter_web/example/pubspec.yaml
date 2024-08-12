@@ -8,7 +8,13 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  google_maps_flutter_platform_interface: ^2.9.0
+# google_maps_flutter_platform_interface: ^2.4.0
+  google_maps_flutter_platform_interface:
+    git:
+      url: https://github.com/moolsbytheway/packages.git
+      path: packages/google_maps_flutter/google_maps_flutter_platform_interface
+      ref: google_maps_flutter/add-poi-tap-callback-2.9.0
+
   google_maps_flutter_web:
     path: ../
   web: ^1.0.0
@@ -18,8 +24,13 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   google_maps: ^8.0.0
-  google_maps_flutter: ^2.2.0 # Needed for projection_test.dart
   http: ^1.2.2
+  google_maps_flutter:
+    git:
+      url: https://github.com/moolsbytheway/packages.git
+      path: packages/google_maps_flutter/google_maps_flutter
+      ref: google_maps_flutter/add-poi-tap-callback-2.9.0
+
   integration_test:
     sdk: flutter
   mockito: 5.4.4

@@ -82,6 +82,8 @@ class GoogleMapController {
     GoogleMapsFlutterPlatform.instance
         .onClusterTap(mapId: mapId)
         .listen((ClusterTapEvent e) => _googleMapState.onClusterTap(e.value));
+    GoogleMapsFlutterPlatform.instance.onPoiTap(mapId: mapId).listen(
+            (MapPoiTapEvent e) => _googleMapState.onPoiTap(e.value));
   }
 
   /// Updates configuration options of the map user interface.
